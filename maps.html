@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snazzy Maps Super Simple Example</title>
+        
+        <style type="text/css">
+            /* Set a size for our map container, the Google Map will take up 100% of this container */
+
+            body {
+                margin: 0px;
+            }
+
+            .container {
+                margin: 0 auto;
+                width: 800px;
+            }
+            #map {
+                width: 750px;
+                height: 500px;
+            
+            }
+
+             #map2 {
+                width: 750px;
+                height: 500px;
+            }
+
+              #map3 {
+                width: 750px;
+                height: 500px;
+            }
+
+            .invert {
+                -webkit-filter: blur(1px) invert(1) saturate(50%);
+                -webkit-transition: .5s all ease;
+            }
+
+            .invert:hover {
+                 -webkit-filter:  blur(0px) invert(0) saturate(0%);
+            }
+        </style>
+        
+        <!-- 
+            You need to include this script on any page that has a Google Map.
+            When using Google Maps on your own site you MUST signup for your own API key at:
+                https://developers.google.com/maps/documentation/javascript/tutorial#api_key
+            After your sign up replace the key in the URL below or paste in the new script tag that Google provides.
+        -->
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASm3CwaK9qtcZEWYa-iQwHaGi3gcosAJc&sensor=false"></script>
+        <script type="text/javascript" src="maps.js"></script>
+        
+       
+    </head>
+    <body>
+        <div class="container">
+            <!-- The element that will contain our Google Map. This is used in both the Javascript and CSS above. -->
+             <div id="map3" class="invert"></div>
+            <div id="map"></div>
+            <div id="map2"></div>
+        </div>
+    </body>
+</html>
